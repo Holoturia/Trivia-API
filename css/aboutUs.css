@@ -1,10 +1,28 @@
 html * {
-        font-family: Helvetica, Arial, sans-serif;
-        background-color: grey;
+        /* font-family: Helvetica, Arial, sans-serif; */
+        background-color: black;
+        color: gray;
     }
     .titleAU{
         text-align: center;
+        margin-bottom: 1px;
     }
     .subtitleAU{
+        text-align: center;
         font-style: italic;
+        font-size: 20px;
+        margin-top: 2px;
+    }
+
+    h2 {
+        display: inline-block;
+        padding-left: 10px;
+    }
+
+    h3 {
+        padding-bottom: 0px;
+    }
+
+    p {
+        padding-top: 0px;
     }
