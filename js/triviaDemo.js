@@ -1,6 +1,7 @@
 const APILink = "https://opentdb.com/api.php?amount=1&type=multiple";
 let correctAnswer = "";
 
+//Gets filtres from user and fetch
 function getQuestion(){
     let category, difficulty;
 
@@ -15,6 +16,7 @@ function getQuestion(){
     }
 }
 
+//Get data from API and print
 function fetchQuestion(category, difficulty){
     let link = APILink;
 
@@ -32,9 +34,7 @@ function fetchQuestion(category, difficulty){
             return result.json();
         })
         .then(function getData(data){
-            console.log(data);
-
-            correctAnswer = data.results[0].correct_answer;
+            correctAnswer = data.results[0].correct_answer;     //Get the correct answer for later on
 
             printData(data);
         })
@@ -45,15 +45,16 @@ function fetchQuestion(category, difficulty){
     
 }
 
+//Parse data to html
 function printData(data){
     let answers = [];
-    answers.push(data.results[0].correct_answer);
+    answers.push(data.results[0].correct_answer);   //Get all answers into an array
 
     data.results[0].incorrect_answers.forEach(element => {
         answers.push(element);
     });
 
-    answers.sort(() => Math.random() - 0.5);    //Shuffle
+    answers.sort(() => Math.random() - 0.5);        //Shuffle array
 
     document.getElementById("output").innerHTML = `
     <p>${data.results[0].question}<p>
@@ -69,11 +70,12 @@ function printData(data){
     `;
 }
 
+//Checks user's result
 function checkResult(){
     let playerAnswer = document.querySelector("input[type='radio'][name=answer]:checked").value;
 
     if (playerAnswer == correctAnswer){
-        alert("Correct!")
+        alert("Correct!")                       //TO CHANGE!! DO SOMETHING ELSE BESIDES AN ALERT!!
     }
     else{
         alert("Incorrect!");
