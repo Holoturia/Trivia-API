@@ -27,21 +27,20 @@ function fetchQuestion(category, difficulty){
     if (difficulty != "random" || difficulty == ""){
         link += "&difficulty=" + difficulty;
     }
+    
+    document.getElementById("output").innerHTML = "<p>Searching for a question...</p>";
 
-    try{
-        fetch(link)
-        .then(function getResult(result){
-            return result.json();
-        })
-        .then(function getData(data){
-            correctAnswer = data.results[0].correct_answer;     //Get the correct answer for later on
+    fetch(link)
+    .then(function getResult(result){
+        return result.json();
+    })
+    .then(function getData(data){
+        correctAnswer = data.results[0].correct_answer;     //Get the correct answer for later on
 
-            printData(data);
-        })
-    }
-    catch{
-
-    }
+        printData(data);
+    })
+    
+    
     
 }
 
