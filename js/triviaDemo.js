@@ -57,27 +57,30 @@ function printData(data){
     answers.sort(() => Math.random() - 0.5);        //Shuffle array
 
     document.getElementById("output").innerHTML = `
-    <p>${data.results[0].question}<p>
-    <input type="radio" id="q1" name="answer" value="${answers[0]}">
-    <label for="q1">${answers[0]}</label><br>
-    <input type="radio" id="q2" name="answer" value="${answers[1]}">
-    <label for="q2">${answers[1]}</label><br>
-    <input type="radio" id="q3" name="answer" value="${answers[2]}">
-    <label for="q3">${answers[2]}</label><br>
-    <input type="radio" id="q4" name="answer" value="${answers[3]}">
-    <label for="q4">${answers[3]}</label><br><br>
-    <button onclick="checkResult()">Check result</button>
+    <p>${data.results[0].question}</p>
+    <button onclick="checkResult(document.getElementById('a1').value)" id="a1" value="${answers[0]}">${answers[0]}</button>
+    <button onclick="checkResult(document.getElementById('a2').value)" id="a2" value="${answers[1]}">${answers[1]}</button>
+    <button onclick="checkResult(document.getElementById('a3').value)" id="a3" value="${answers[2]}">${answers[2]}</button>
+    <button onclick="checkResult(document.getElementById('a4').value)" id="a4" value="${answers[3]}">${answers[3]}</button>
     `;
+
+    //Restart result div
+    document.getElementById("result").innerHTML = "";
 }
 
 //Checks user's result
-function checkResult(){
-    let playerAnswer = document.querySelector("input[type='radio'][name=answer]:checked").value;
+function checkResult(playerAnswer){
 
     if (playerAnswer == correctAnswer){
-        alert("Correct!")                       //TO CHANGE!! DO SOMETHING ELSE BESIDES AN ALERT!!
+        document.getElementById("result").innerHTML = `<p>Correct!</p>`;
     }
     else{
-        alert("Incorrect!");
+        document.getElementById("result").innerHTML = `<p>Incorrect! The correct answer is: ${correctAnswer}</p>`;
     }
+
+    //Disable buttons
+    document.getElementById("a1").disabled = true;
+    document.getElementById("a2").disabled = true;
+    document.getElementById("a3").disabled = true;
+    document.getElementById("a4").disabled = true;
 }
