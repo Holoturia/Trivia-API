@@ -10,7 +10,11 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: gray;
+    color: #002a38;
+}
+
+.frontBox p{
+  color: white;
 }
 
 .container {
@@ -34,7 +38,7 @@ main{
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: #555;
+    background-color: #002a38;
     color: white;
     font-size: 16px;
     border: none;
