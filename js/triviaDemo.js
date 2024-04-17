@@ -8,12 +8,8 @@ function getQuestion(){
     category = document.getElementById("category").value;
     difficulty = document.getElementById("difficulty").value;
 
-    try{
-        fetchQuestion(category, difficulty);
-    }
-    catch (TypeError){
-        document.getElementById("output").innerHTML = `<p>No data<p>`;
-    }
+    fetchQuestion(category, difficulty);
+    
 }
 
 //Get data from API and print
@@ -28,6 +24,10 @@ function fetchQuestion(category, difficulty){
         link += "&difficulty=" + difficulty;
     }
     
+    //Restart result div
+    document.getElementById("result").innerHTML = "";
+
+    //Print this while loading
     document.getElementById("output").innerHTML = "<p>Searching for a question...</p>";
 
     fetch(link)
@@ -35,13 +35,21 @@ function fetchQuestion(category, difficulty){
         return result.json();
     })
     .then(function getData(data){
-        correctAnswer = data.results[0].correct_answer;     //Get the correct answer for later on
+        try{
+            correctAnswer = data.results[0].correct_answer;     //Get the correct answer for later on
 
-        printData(data);
-    })
-    
-    
-    
+            printData(data);
+        }
+        catch (err){
+            if (err instanceof TypeError){
+                document.getElementById("output").innerHTML = `<p>No questions found. Try again after 5 seconds...</p>`;
+            }
+            else{
+                document.getElementById("output").innerHTML = `<p>Unknown error!</p>`;
+            }
+        }
+        
+    })   
 }
 
 //Parse data to html
@@ -63,8 +71,7 @@ function printData(data){
     <button onclick="checkResult(document.getElementById('a4').value)" id="a4" value="${answers[3]}">${answers[3]}</button>
     `;
 
-    //Restart result div
-    document.getElementById("result").innerHTML = "";
+    console.log(answers);
 }
 
 //Checks user's result
