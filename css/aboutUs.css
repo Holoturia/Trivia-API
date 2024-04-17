@@ -1,33 +1,42 @@
-html * {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        background-color: black;
-        color: white;
-    }
     .titleAU{
         text-align: center;
         margin-bottom: 1px;
+        padding-top: 3px;
     }
     .subtitleAU{
         text-align: center;
         font-style: italic;
         font-size: 20px;
         margin-top: 2px;
+        padding-bottom: 3px;
     }
     
-    .linktoDb {
+    .linkAU {
         color: blue;
         text-decoration: underline;
     }
 
-    h2 {
-        display: inline-block;
-        padding-left: 10px;
+    .mainAU {
+        background-color: #002a38;
+        padding: 0px;
+        border-radius: 70px;
+        margin: auto;
+        margin-bottom: 1%;
+        align-items: center;
+        width: 70%;
+        color: white;
     }
 
-    h3 {
-        padding-bottom: 0px;
-    }
+    .textAU{
+        background-color: rgb(0, 0, 0, 0.3);
+        color: white;
+        border-radius: 15px;
+        width: 95%;
+        margin: auto;
+        margin-bottom: 8%;
+        padding: 1px;
+        align-items: left;
+        padding-left: 2%;
+        padding-right: 2%;
+        }
 
-    p {
-        padding-top: 0px;
-    }
