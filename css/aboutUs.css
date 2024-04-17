@@ -14,6 +14,11 @@ html * {
         margin-top: 2px;
     }
 
+    .linktoDb {
+        color: blue;
+        text-decoration: underline;
+    }
+
     h2 {
         display: inline-block;
         padding-left: 10px;
