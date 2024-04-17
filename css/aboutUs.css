@@ -1,7 +1,7 @@
 html * {
-        font-family: Helvetica, sans-serif;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         background-color: black;
-        color: gray;
+        color: white;
     }
     .titleAU{
         text-align: center;
@@ -13,7 +13,7 @@ html * {
         font-size: 20px;
         margin-top: 2px;
     }
-
+    
     .linktoDb {
         color: blue;
         text-decoration: underline;
