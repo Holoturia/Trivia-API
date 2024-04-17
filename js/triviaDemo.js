@@ -65,10 +65,10 @@ function printData(data){
 
     document.getElementById("output").innerHTML = `
     <p>${data.results[0].question}</p>
-    <button onclick="checkResult(document.getElementById('a1').value)" id="a1" value="${answers[0]}">${answers[0]}</button>
-    <button onclick="checkResult(document.getElementById('a2').value)" id="a2" value="${answers[1]}">${answers[1]}</button>
-    <button onclick="checkResult(document.getElementById('a3').value)" id="a3" value="${answers[2]}">${answers[2]}</button>
-    <button onclick="checkResult(document.getElementById('a4').value)" id="a4" value="${answers[3]}">${answers[3]}</button>
+    <button onclick="checkResult(document.getElementById('a1').value)" class = "playButton" id="a1" value="${answers[0]}">${answers[0]}</button>
+    <button onclick="checkResult(document.getElementById('a2').value)" class = "playButton" id="a2" value="${answers[1]}">${answers[1]}</button>
+    <button onclick="checkResult(document.getElementById('a3').value)" class = "playButton" id="a3" value="${answers[2]}">${answers[2]}</button>
+    <button onclick="checkResult(document.getElementById('a4').value)" class = "playButton" id="a4" value="${answers[3]}">${answers[3]}</button>
     `;
 
     console.log(answers);

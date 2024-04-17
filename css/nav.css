@@ -13,7 +13,6 @@ nav {
     text-align: center;
     border-radius: 50px;
     height: 30px;
-    
 }
 
 ul {
@@ -28,8 +27,7 @@ ul {
 li {
     float: left;
     text-align: center;
-    display: inline;
-    
+    display: inline;  
 }
 
 li :hover {
@@ -41,7 +39,10 @@ li :hover {
     background-color:black;
     border: 1px #82BB9B;
     border-radius: 20px;
-    height: 30px;
+    height: 40px;
     cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
+    font-size: 40px;
+    margin: 50px;
 }
