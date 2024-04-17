@@ -38,10 +38,11 @@ li :hover {
     background-color:black;
     border: 1px #82BB9B;
     border-radius: 20px;
-    height: 40px;
+    height: 30px;
     cursor: pointer;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
-    font-size: 40px;
-    margin: 50px;
+    font-size: 20px;
+    width: 100px;
+    margin-top: 10px;
 }
