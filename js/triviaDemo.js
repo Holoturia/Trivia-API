@@ -78,7 +78,7 @@ function printData(data){
 function checkResult(playerAnswer){
 
     if (playerAnswer == correctAnswer){
-        document.getElementById("result").innerHTML = `<p>Correct!</p>`;
+        document.getElementById("result").innerHTML = `<img id="bob" src="./img/bob esponja mafioso correcto.png" alt="">`;
     }
     else{
         document.getElementById("result").innerHTML = `<p>Incorrect! The correct answer is: ${correctAnswer}</p>`;
