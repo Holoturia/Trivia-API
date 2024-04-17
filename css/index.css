@@ -1,6 +1,5 @@
-
-body {
-    background-color:rgb(0, 0, 0);
+main{
+    color: black;
 }
 
 .frontBox {
@@ -8,5 +7,44 @@ body {
     margin: auto;
     text-align: center;
     width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: gray;
 }
+
+.container {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    
+  }
+  
+  .container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .container .playButton {
+    position: absolute;
+    height: 60px;
+    width: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    text-align: center;
+    font-size:30px;
+  }
+
+  .playButton:hover{
+    background-color: rgb(255, 255, 255, 0.5);
+    color:black;
+  }
