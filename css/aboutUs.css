@@ -30,6 +30,7 @@ main {
 
     .textAU{
         background-color: rgb(0, 0, 0, 0.3);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         color: white;
         border-radius: 15px;
         width: 95%;
