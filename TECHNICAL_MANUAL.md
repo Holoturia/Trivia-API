@@ -40,7 +40,7 @@ Additionally, you can add to the URL "&category=x" to add a certain category and
 - 13 Entertainment: Musical and Theaters
 - 14 Entertainment: Television
 - 15 Entertainment: Videogames
-- 16 Entertainment: Board Gammes
+- 16 Entertainment: Board Games
 - 17 Science and Nature
 - 18 Science: Computers
 - 19 Science: Mathematics
