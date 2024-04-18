@@ -18,7 +18,7 @@ This page contains information about the project.
 - CSS linked: webStyles.css, nav.css, aboutUs.css
 
 ## CSS
-The pages have 3 css files linked:
+This web pages have 3 css files linked:
 - **webStyles.css**: every page will load this css. This contains general styles for the whole web.
 - **nav.css**: every page will load this css. This contains styles for the navbar in all pages.
 - **index.css/triviaGame.css/aboutUs.css**: each page will load its own css file. This contains specific styles for the linked page.
