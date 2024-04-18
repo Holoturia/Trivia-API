@@ -26,8 +26,13 @@ html {
       radial-gradient(circle, var(--trans)),
       conic-gradient(var(--solid-wrap));
     background-blend-mode: overlay;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed ;
     height: 100%;
-    /*font-family: Menlo, monospace;*/
+    font-family: Menlo, monospace;
+    /*font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
   }
 
   ul {
