@@ -28,6 +28,7 @@ main{
   .container img {
     width: 100%;
     height: auto;
+    position: relative;
   }
   
   .container .playButton {
@@ -46,9 +47,13 @@ main{
     border-radius: 20px;
     text-align: center;
     font-size:30px;
+    visibility:hidden;
   }
+
+  
 
   .playButton:hover{
     background-color: rgb(255, 255, 255, 0.5);
     color:black;
+    visibility: visible;
   }
