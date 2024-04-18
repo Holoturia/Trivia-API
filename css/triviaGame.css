@@ -25,9 +25,10 @@ main{
     justify-content: center;
     text-align: center;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
     font-size: 30px;
     flex-wrap: wrap;
+    
 }
 
 select{
@@ -37,11 +38,28 @@ select{
     cursor: pointer;
 }
 
+.customSelect select{
+    font-family: Menlo, monospace;
+    color: white;
+    background-color:#002a38;
+    font-size: 20px;
+  }
+  
+
 .askButton{
     height: 33px;
     border-radius: 4px;
     margin: 5px;
     cursor: pointer;
+    background-color:#002a38;
+    color: white;
+    font-family: Menlo, monospace;
+    font-size: 20px;
+}
+
+.askButton:hover{
+    background-color: rgb(255, 255, 255, 0.5);
+    color:black;
 }
 
 #output {
@@ -56,6 +74,15 @@ select{
     border-radius: 4px;
     margin: 5px;
     cursor: pointer;
+    background-color:#002a38;
+    color: white;
+    font-family: Menlo, monospace;
+    font-size: 20px;
+}
+
+.playButton:hover{
+    background-color: rgb(255, 255, 255, 0.5);
+    color:black;
 }
 
 #result{
