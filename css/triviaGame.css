@@ -1,4 +1,9 @@
 main{
+    /*border: 2px solid white;*/
+    height: 100%; 
+}
+
+.triviaBox {
     margin-top: 40px;
     background-color: rgb(0, 0, 0, 0.3);
     color: white;
