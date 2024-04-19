@@ -89,6 +89,7 @@ select{
     text-align: center;
     height: 30%;
     align-items: center;
+    bottom: 0;
 }
 
 #bob{
