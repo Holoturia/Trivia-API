@@ -29,6 +29,11 @@ main{
     width: 400px;
     height: 400px;
     position: relative;
+    transition: transform 7s ease-in-out;
+  }
+
+  .container img:hover {
+    transform: rotate(540deg);
   }
   
   .container .playButton {
