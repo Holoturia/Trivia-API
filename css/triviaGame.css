@@ -85,12 +85,20 @@ select{
     color:black;
 }
 
+.playButton:disabled{
+    background-color: #b6adb4;
+    color: #fff;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
 #result{
     display: flex;
     flex-direction: row;
     text-align: center;
     height: 40%;
     align-items: center;
+    font-size: 20px;
 }
 
 #bob{
