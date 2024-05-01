@@ -26,7 +26,7 @@ main{
     text-align: center;
     align-items: center;
     gap: 10px;
-    font-size: 30px;
+    font-size: 25px;
     flex-wrap: wrap;
     
 }
@@ -47,7 +47,7 @@ select{
   
 
 .askButton{
-    height: 33px;
+    height: 30px;
     border-radius: 4px;
     margin: 5px;
     cursor: pointer;
